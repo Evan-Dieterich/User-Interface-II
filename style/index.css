@@ -1,1 +1,173 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom CSS starts here */
+
+body {
+    background: #404040;
+}
+
+.titlebar {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-family: 'Fira Code', monospace;
+    font-size: 50px;
+    color: white;
+    margin-left: 50px;
+}
+
+ul {
+    margin-left: 20px;
+    display: flex;
+}
+
+li {
+    flex-direction: row;
+    margin: 6px;
+    padding: 15px 5px;
+    width: 100px;
+    color: white;
+    background: #F27A24;
+    border-radius: 25px;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+}
+
+li:hover {
+    background: orange;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row;
+
+}
+
+.art {
+    display: flex;
+
+    margin-right: auto;
+    margin-left: 15px;
+    justify-content: center;
+    width: 500px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    width: 800px;
+    font-family: 'Fira Code', monospace;
+    color: white;
+    padding: 0px 15px;
+}
+
+.info h2 {
+    font-size: 35px;
+}
+
+.info p {
+    font-size: 20px;
+}
+
+.boxes {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: 'Fira Code', monospace;
+    font-size: 20px;
+    color: white;
+}
+
+button {
+    border-radius: 25px;
+    text-decoration: none;
+    background: lightgray;
+    font-family: 'Fira Code', monospace;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid black;
+}
